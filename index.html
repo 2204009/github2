@@ -1,1 +1,27 @@
-a html is created 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Manipulation with JavaScript</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="myBox"></div>
+
+  <script>
+    // Get the element by its ID
+    var boxElement = document.getElementById('myBox');
+
+    // Change CSS properties using JavaScript
+    boxElement.style.backgroundColor = 'blue';
+    boxElement.style.width = '150px';
+    boxElement.style.height = '150px';
+  </script>
+</body>
+</html>
